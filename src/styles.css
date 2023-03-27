@@ -1,0 +1,186 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+/**
+* base styles
+*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #212121;
+}
+
+a {
+  pointer-events: all;
+  color: black;
+  text-decoration: none;
+  font-family: 'Racing Sans One', sans-serif;
+}
+
+a:hover {
+  color: white;
+}
+
+svg {
+    color: black;
+}
+
+svg:hover {
+    color: white;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+canvas {
+  opacity: 0;
+  touch-action: none;
+  animation: fade-in 5s ease 1s forwards;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  overflow: hidden;
+}
+
+li {
+  display: block;
+  overflow: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+/**
+* info
+*/
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  transform: translate3d(-50%, -50%, 0);
+  /* border-left: 5px solid black; */
+  /* border-right: 5px solid black; */
+  padding-left: 40px;
+  user-select: none;
+}
+
+.info p {
+  font-size: 16px;
+  line-height: 1.25em;
+  margin-bottom: 0.2em;
+}
+
+/**
+* price
+*/
+.price {
+  display: inline-block;
+  font-family: 'Fragment Mono', monospace;
+  background: #E7222E;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.base-price {
+  display: inline-block;
+  font-family: 'Fragment Mono', monospace;
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/**
+* headings
+*/
+.info h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
+.info h3 {
+  font-weight: 800;
+  font-size: 4em;
+  letter-spacing: -4px;
+  line-height: 1em;
+  margin: 0;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+.info h4 {
+  font-weight: 300;
+  font-size: 1.15em;
+  letter-spacing: -1px;
+  margin: 10px 0;
+}
+
+/**
+* context
+*/
+.context {
+  background: #111;
+  padding: 20px;
+  border-radius: 5px;
+}
+p.context {
+  color: white;
+  text-align: justify;
+}
+
+/**
+* copyright
+*/
+.copyright {
+  background: #111;
+  padding: 20px;
+  border-radius: 5px;
+}
+p.copyright {
+  color: white;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/**
+* misc
+*/
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.bmw {
+    margin-top: 5px;
+    color: #797979;
+}
