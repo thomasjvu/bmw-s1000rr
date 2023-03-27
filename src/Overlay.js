@@ -4,7 +4,7 @@ import { useStore } from './store'
 import SimpleIconsBmw from './Logo'
 
 const container = {
-  hidden: { opacity: 0, height: 0, transition: { staggerChildren: 0.05 } },
+    hidden: { opacity: 0, height: 0, transition: { staggerChildren: 0.05 } },
   show: {
     opacity: 1,
     height: 'auto',

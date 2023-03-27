@@ -7,7 +7,7 @@
 */
 * {
   box-sizing: border-box;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 html,
@@ -36,11 +36,11 @@ a:hover {
 }
 
 svg {
-    color: black;
+  color: black;
 }
 
 svg:hover {
-    color: white;
+  color: white;
 }
 
 @keyframes fade-in {
@@ -104,7 +104,7 @@ li {
 .price {
   display: inline-block;
   font-family: 'Fragment Mono', monospace;
-  background: #E7222E;
+  background: #e7222e;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -128,8 +128,10 @@ li {
   margin-bottom: 0.5em;
   color: black;
   -webkit-text-stroke: 2px white;
+  background: white;
+  text-align: center;
+  border: 2px solid black;
 }
-
 
 .info h3 {
   font-weight: 800;
@@ -141,29 +143,27 @@ li {
   -webkit-text-stroke: 2px black;
 }
 
-
 @media (max-width: 400px) {
-    .info {
-        width: 400px;
-          left: 45%;
+  .info {
+    width: 400px;
+    left: 45%;
+  }
 
-    }
+  .info h1 {
+    font-size: 2.75rem;
+  }
 
-    .info h1 {
-        font-size: 2.75rem;
-    }
+  .info h3 {
+    font-size: 2.75rem;
+  }
 
-    .info h3 {
-        font-size: 2.75rem;
-    }
+  .info p {
+    font-size: 0.85rem;
+  }
 
-    .info p {
-        font-size: 0.85rem;
-    }
-
-    .info a {
-        color: #E7222E;
-    }
+  .info a {
+    color: #e7222e;
+  }
 }
 
 /**
@@ -201,6 +201,6 @@ p.copyright {
 }
 
 .bmw {
-    margin-top: 5px;
-    color: #797979;
+  margin-top: 5px;
+  color: #797979;
 }
