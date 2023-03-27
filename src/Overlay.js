@@ -4,7 +4,7 @@ import { useStore } from './store'
 import SimpleIconsBmw from './Logo'
 
 const container = {
-    hidden: { opacity: 0, height: 0, transition: { staggerChildren: 0.05 } },
+  hidden: { opacity: 0, height: 0, transition: { staggerChildren: 0.05 } },
   show: {
     opacity: 1,
     height: 'auto',
@@ -34,11 +34,17 @@ export function Overlay() {
   return (
     <>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
-        <a className="creator" href="https://thomasjvu.com/" target="_blank" style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '17px' }}>
+        <a
+          className="creator"
+          href="https://thomasjvu.com/"
+          target="_blank"
+          style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '17px' }}>
           @THOMASJVU
         </a>
         <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '17px' }}>
-          <a href="https://www.bmwmotorcycles.com/en/models/sport/s1000rr.html" target="_blank">Purchase Here</a>
+          <a href="https://www.bmwmotorcycles.com/en/models/sport/s1000rr.html" target="_blank">
+            Purchase Here
+          </a>
         </div>
       </div>
       <SimpleIconsBmw style={{ position: 'absolute', top: 40, left: 40, width: 60, height: 60 }} />
@@ -58,7 +64,9 @@ export function Overlay() {
             carving up the track or exploring winding roads, this motorcycle is sure to provide an unforgettable ride.
           </p>
           <p className="copyright">
-            <a href="https://skfb.ly/6DBVq">BMW RR 1000</a> by lsalcedo is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a> <br /> <span className="bmw">BMW is property of BMW</span>.
+            <a href="https://skfb.ly/6DBVq">BMW RR 1000</a> by lsalcedo is licensed under{' '}
+            <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a> <br />{' '}
+            <span className="bmw">BMW is property of BMW</span>.
           </p>
         </List>
       </div>

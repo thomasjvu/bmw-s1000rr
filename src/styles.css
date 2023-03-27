@@ -98,6 +98,10 @@ li {
   margin-bottom: 0.2em;
 }
 
+.info a {
+    color: #e7222e;
+}
+
 /**
 * price
 */
@@ -161,9 +165,6 @@ li {
     font-size: 0.85rem;
   }
 
-  .info a {
-    color: #e7222e;
-  }
 }
 
 /**
