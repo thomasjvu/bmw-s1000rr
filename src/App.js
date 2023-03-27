@@ -6,7 +6,7 @@ import { useStore } from './store'
 
 export default function App() {
   return (
-    <Canvas eventSource={document.getElementById('root')} eventPrefix="client" camera={{ position: [0, 0, 75], fov: 40 }}>
+    <Canvas eventSource={document.getElementById('root')} eventPrefix="client" camera={{ position: [0, 0, 64], fov: 40 }}>
       <ambientLight intensity={0.7} />
       <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, -5]} castShadow />
       <Environment preset="city" background blur={1} />

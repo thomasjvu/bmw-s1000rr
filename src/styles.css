@@ -7,6 +7,7 @@
 */
 * {
   box-sizing: border-box;
+    overflow: hidden;
 }
 
 html,
@@ -123,11 +124,12 @@ li {
 * headings
 */
 .info h1 {
-  font-size: 4em;
+  font-size: 4rem;
   margin-bottom: 0.5em;
   color: black;
   -webkit-text-stroke: 2px white;
 }
+
 
 .info h3 {
   font-weight: 800;
@@ -139,11 +141,29 @@ li {
   -webkit-text-stroke: 2px black;
 }
 
-.info h4 {
-  font-weight: 300;
-  font-size: 1.15em;
-  letter-spacing: -1px;
-  margin: 10px 0;
+
+@media (max-width: 400px) {
+    .info {
+        width: 400px;
+          left: 45%;
+
+    }
+
+    .info h1 {
+        font-size: 2.75rem;
+    }
+
+    .info h3 {
+        font-size: 2.75rem;
+    }
+
+    .info p {
+        font-size: 0.85rem;
+    }
+
+    .info a {
+        color: #E7222E;
+    }
 }
 
 /**
@@ -169,8 +189,8 @@ p.context {
 }
 p.copyright {
   color: white;
-  font-size: 0.85rem;
   text-align: center;
+  font-family: 'Fragment Mono', monospace;
 }
 
 /**

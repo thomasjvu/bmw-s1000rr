@@ -58,8 +58,7 @@ export function Overlay() {
             carving up the track or exploring winding roads, this motorcycle is sure to provide an unforgettable ride.
           </p>
           <p className="copyright">
-            "BMW RR 1000" (https://skfb.ly/6DBVq) by lsalcedo is licensed under Creative Commons Attribution
-            (http://creativecommons.org/licenses/by/4.0/). <br /> <span className="bmw">BMW is property of BMW</span>.
+            <a href="https://skfb.ly/6DBVq">BMW RR 1000</a> by lsalcedo is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a> <br /> <span className="bmw">BMW is property of BMW</span>.
           </p>
         </List>
       </div>
