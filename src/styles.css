@@ -193,15 +193,13 @@ p.copyright {
   text-align: center;
   font-family: 'Fragment Mono', monospace;
 }
+.copyright a {
+  font-family: 'Fragment Mono', monospace;
+}
 
 /**
-* misc
+* font
 */
 .inter {
   font-family: 'Inter', sans-serif;
-}
-
-.bmw {
-  margin-top: 5px;
-  color: #797979;
 }

@@ -65,8 +65,8 @@ export function Overlay() {
           </p>
           <p className="copyright">
             <a href="https://skfb.ly/6DBVq">BMW RR 1000</a> by lsalcedo is licensed under{' '}
-            <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a> <br />{' '}
-            <span className="bmw">BMW is property of BMW</span>.
+            <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a>. 
+            <span className=""> BMW is property of BMW</span>.
           </p>
         </List>
       </div>
