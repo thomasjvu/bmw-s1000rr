@@ -38,10 +38,10 @@ export function Overlay() {
           className="creator"
           href="https://thomasjvu.com/"
           target="_blank"
-          style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '17px' }}>
+          style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '15px' }}>
           @THOMASJVU
         </a>
-        <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '17px' }}>
+        <div className="cta" style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '15px' }}>
           <a href="https://www.bmwmotorcycles.com/en/models/sport/s1000rr.html" target="_blank">
             Purchase Here
           </a>

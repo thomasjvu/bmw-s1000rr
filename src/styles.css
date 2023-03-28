@@ -198,6 +198,24 @@ p.copyright {
 }
 
 /**
+* call to action
+*/
+.cta {
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background: #e7222e;
+}
+
+.cta a {
+    color: white;
+    font-family: "Fragment Mono", monospace;
+}
+
+/**
 * font
 */
 .inter {
