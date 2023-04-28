@@ -1,8 +1,9 @@
-import { useRef } from 'react'
+import { Suspense, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF, MeshTransmissionMaterial, ContactShadows, Environment, OrbitControls } from '@react-three/drei'
 import { easing } from 'maath'
 import { useStore } from './store'
+import ModelLoader from './ModelLoader'
 
 export default function App() {
   return (
@@ -12,7 +13,9 @@ export default function App() {
       <Environment preset="city" background blur={1} />
       <ContactShadows resolution={512} position={[0, -0.8, 0]} opacity={1} scale={10} blur={2} far={0.8} />
       <Selector>
-        <Model rotation={[0, 0, 0]} />
+        <Suspense fallback={<ModelLoader />}>
+            <Model rotation={[0, 0, 0]} />
+        </Suspense>
       </Selector>
       <OrbitControls enableDamping rotateSpeed={1.1} enableZoom={false} />
     </Canvas>
